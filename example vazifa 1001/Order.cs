@@ -25,12 +25,13 @@ namespace example_vazifa_1001
 
         public void DisplayOrder()
         {
-            Console.WriteLine("Заказ:");
+            Console.WriteLine("Order:");
             foreach (var item in Items)
             {
-                Console.WriteLine($"{item.Name} - ${item.Price}");
+                Console.WriteLine($"{item.Name} - ${item.Price} - {item.Amount}");
             }
-            Console.WriteLine($"Итого: ${TotalPrice}");
+            Console.WriteLine();
+            Console.WriteLine($"Total: ${TotalPrice}");
         }
     }
 }

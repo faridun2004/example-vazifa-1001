@@ -6,14 +6,14 @@ internal class Program
     {
         Restaurant restaurant = new Restaurant();
 
-        Console.WriteLine("Добро пожаловать в ресторан!");
+        Console.WriteLine("Welcome to the restaurant!");
 
         while (true)
         {
-            Console.WriteLine("Выберите действие:");
-            Console.WriteLine("1. Посмотреть меню");
-            Console.WriteLine("2. Разместить заказ");
-            Console.WriteLine("3. Выход");
+            Console.WriteLine("Choose an action:");
+            Console.WriteLine("1. View menu");
+            Console.WriteLine("2. Place an order");
+            Console.WriteLine("3. Exit");
 
             string input = Console.ReadLine();
 
@@ -29,16 +29,16 @@ internal class Program
                         order.DisplayOrder();
                         break;
                     case 3:
-                        Console.WriteLine("До свидания!");
+                        Console.WriteLine("Goodbye!");
                         return;
                     default:
-                        Console.WriteLine("Некорректный ввод. Попробуйте снова.");
+                        Console.WriteLine("Invalid input. Try again.");
                         break;
                 }
             }
             else
             {
-                Console.WriteLine("Некорректный ввод. Попробуйте снова.");
+                Console.WriteLine("Invalid input. Try again.");
             }
         }
     }
